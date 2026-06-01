@@ -1,11 +1,12 @@
 from dotenv import load_dotenv
+load_dotenv()
 
 from langchain_core.messages import HumanMessage
 from langgraph.graph import MessagesState, StateGraph,END
 
 from nodes import run_agent_reasoning, tool_node
 
-load_dotenv()
+
 
 AGENT_REASON="agent_reason"
 ACT= "act"
